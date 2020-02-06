@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+".\objects\startup_stm32f10x_md.o"
+".\objects\system_stm32f10x.o"
+".\objects\bsp.o"
+".\objects\stm32_usart.o"
+".\objects\stm32f10x_it.o"
+".\objects\main.o"
+".\objects\stm32f10x_bkp.o"
+".\objects\misc.o"
+".\objects\stm32f10x_gpio.o"
+".\objects\stm32f10x_pwr.o"
+".\objects\stm32f10x_rcc.o"
+".\objects\stm32f10x_rtc.o"
+".\objects\stm32f10x_spi.o"
+".\objects\stm32f10x_usart.o"
+".\objects\stm32f10x_exti.o"
+".\objects\cola_os.o"
+".\objects\cola_device.o"
+".\objects\cola_init.o"
+".\objects\app.o"
+".\objects\app_uart.o"
+".\objects\cola_fifo.o"
+".\objects\utils.o"
+--library_type=microlib --strict --scatter ".\Objects\ExecutableFile.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\ExecutableFile.map" -o .\Objects\ExecutableFile.axf
